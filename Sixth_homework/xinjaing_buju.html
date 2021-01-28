@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新疆旅游网站布局</title>
+		<style type="text/css">
+			/*去除默认样式*/
+			* {margin: 0;padding: 0;}
+			body{background: #2286C6;}
+			.zong{margin: 0 auto;background-color: #FFF; width: 820px; padding-bottom:2px;}
+			.header {margin: 0 auto; width: 810px; height: 130px; background:url(img/zhixingshubanner.jpg) no-repeat -2px 8px/820px 130px}
+			
+			/* start 导航链接 */
+			.link{width: 820px;margin: 0px auto; text-align: center;}
+			.link li{list-style: none;}
+			.link li a{display: inline-block; margin: 4px 4px;}
+			 /* end 导航链接 */
+			 
+			 /* start 主体部分 */
+			.content{width: 810px;height: 600px;background-color: orange;margin: 10px auto;}
+			/* start 主体--左--部分 */
+			.left{width: 202px; height: 600px; background-color: deepskyblue;float: left;}
+			.wea_menu{display: block;background-color: #5EA6EB;}
+			
+			.img_wete{text-align: center;padding: 10px 0px 0px 4px; color: #FFF; font-size: 12px; display: block;width:198px;height:28px; background:no-repeat url(img/weather.jpg) -6px -4px/220px 40px;}
+			.wea_menu ul{width: 180px;}
+			.wea_menu ul li span,.wea_menu ul li img{display: inline-block; /* vertical-align: middle; */}
+			.wea_menu li{list-style: none; font-size: 12px;color: #FFF;display: inline-block;width: 180px; text-align:left;margin: 0px 10px;}
+			.tj{margin: 0px; padding-left: 8px; background-color: #BDF; width: 96%;}
+			.tj_img,.tj_text{display: inline-block;color: #213985;}
+			.left .img{display: block;margin: 0px 8px;margin: 0 auto;border: 1px #FFF solid;}
+			.text_mid{display: block; color: #FFF; text-align: center; font-size: 12px;padding: 2px 0 6px 0;}
+			
+			
+			/* end 主体--左--部分 */
+			
+			/* start 主体--中--部分 */
+			.center{height: 600px; background-color: #FFF;margin: 0px 10px;overflow: hidden;}
+			.mid_top_img{margin: 0 auto; height: 246px; background:url(img/ghost.jpg) no-repeat 4px 0px/406px 246px;}
+			.mid_mid_tit1{margin: 8px auto; height: 44px; background:url(img/picture_h1.gif) no-repeat 8px 0px/166px 44px;}
+			.img_list{margin: 6px auto; text-align: center;}
+			.img_list img{margin: 0px 6px;}
+			.mid_mid_tit2{margin: 8px auto;height: 44px; background:url(img/route_h1.gif) no-repeat 8px 0px/166px 44px;}
+			.center div ul{display: block; margin: 6px auto;}
+			.center div ul li{margin-left:32px; list-style: none;color:#1F6398;text-align: left;font-size: 12px;}
+			/* end 主体--中--部分 */
+			
+			/* start 主体--右--部分 */
+			.right{width: 195px;height: 600px;background-color: deepskyblue;float: right;}
+			.img_rig1{margin: 10px auto; height: 102px; background: url(img/map1.jpg) no-repeat 4px 0px/186px 102px}
+			.img_rig2{margin: 10px auto; height: 102px; background: url(img/map2.jpg) no-repeat 4px 0px/186px 102px;}
+			.right ul{margin: 4px auto;display: block;}
+			.right ul li{margin:2px 12px; list-style: none; color: #FFF; border-bottom: 1px dashed #FFF;text-indent: 1em;}
+			/* end 主体--右--部分 */
+			
+			/* end 主体部分 */
+			
+			.footer{width: 812px;background-color: #5EA6EB;margin:4px;text-align: center;}
+			.fot_text{color: #FFF;}
+		</style>
+	</head>
+	<body>
+		<div class="zong">
+			<div class="header"></div>
+			
+			<!-- start 导航链接 -->
+			<div>
+				<ul class="link">
+					<li>
+						<a href="#">首页</a>
+						<a href="#">新疆简介</a>
+						<a href="#">风土人情</a>
+						<a href="#">吃在新疆</a>
+						<a href="#">线路选择</a>
+						<a href="#">自助行</a>
+						<a href="#">摄影摄像</a>
+						<a href="#">游记精选</a>
+						<a href="#">资源下载</a>
+						<a href="#">雁过留声</a>
+					</li>
+				</ul>
+			</div>
+			<!-- start 导航链接 -->
+			
+			<!-- start 主体部分 -->
+			<div class="content">
+			<!-- start 主体--左--部分 -->
+				<div class="left">
+					<div class="wea_menu">
+						<span class="img_wete">查询天气</span>
+						<ul>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>乌鲁木齐&nbsp;雷阵雨&nbsp;20&#8451-30&#8451</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								吐鲁番&nbsp;多云转阴&nbsp;20&#8451-28&#8451</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>喀什&nbsp;阵雨转多云&nbsp;25&#8451-32&#8451</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>库尔勒&nbsp;阵雨转阴&nbsp;21&#8451-28&#8451</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>克拉玛依&nbsp;雷阵雨&nbsp;20&#8451-30&#8451</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tj">
+						<img class="tj_img" src="img/icon2.gif" >
+						<span class="tj_text">今日推荐</span>
+					</div>
+					<div>
+						<img src="img/tuijianganasihe.jpg" alt="喀纳斯河" class="img">
+						<span class="text_mid">喀纳斯河</span>
+						<img src="img/tuijianbuerjin.jpg" alt="布尔津" class="img">
+						<span class="text_mid">布尔津</span>
+						<img src="img/tuijiantianshanzhilu.jpg" alt="天山之路" class="img">
+						<span class="text_mid">天山之路</span>
+					</div>
+				</div>
+				<!-- end 主体--左--部分 -->
+				
+				<!-- start 主体--右--部分 -->
+				<div class="right">
+					<div class="tj">
+						<img class="tj_img" src="img/icon2.gif" >
+						<span class="tj_text">新疆风光</span>
+					</div>
+					<div class="img_rig1"></div>
+					<div class="img_rig2"></div>
+					<div class="tj">
+						<img class="tj_img" src="img/icon2.gif" >
+						<span class="tj_text">小吃推荐</span>
+					</div>
+					<div>
+						<ul>
+							<li>17号抓饭</li>
+							<li>大盘鸡</li>
+							<li>五一夜市</li>
+							<li>水果</li>
+						</ul>
+					</div>
+					<div class="tj">
+						<img class="tj_img" src="img/icon2.gif" >
+						<span class="tj_text">宾馆酒店</span>
+					</div>
+					<div>
+						<ul>
+							<li>美丽华大饭店</li>
+							<li>海德大饭店</li>
+							<li>银都大饭店</li>
+							<li>鸿福大饭店</li>
+							<li>友好大饭店</li>
+							<li>棉麻宾馆</li>
+							<li>电信宾馆</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end 主体--右--部分 -->
+				
+				<!-- start 主体--中--部分 -->
+				<div class="center">
+					<div class="mid_top_img"></div>
+					<div class="mid_mid_tit1"></div>
+					<div class="img_list">
+						<img src="img/beauty1.jpg" alt="">
+						<img src="img/beauty2.jpg" alt="">
+						<img src="img/beauty3.jpg" alt="">
+						<img src="img/beauty4.jpg" alt="">
+					</div>
+					<div class="mid_mid_tit2"></div>
+					<div>
+						<ul>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>吐鲁番——库尔勒——库车——塔中——和田——喀什</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								乌鲁木齐——天池——克拉玛依——乌伦古湖——喀纳斯</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>乌鲁木齐——奎屯——乔尔玛——那拉提——巴音布鲁克</span>
+							</li>
+							<li>
+								<img src="img/icon1.gif" >
+								<span>乌鲁木齐——五彩城——将军戈壁——吉木萨尔</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end 主体--中--部分 -->
+			</div>
+			<!-- end 主体部分 -->
+			<div class="footer">艾萨克©版权所有<span class="fot_text">demo@demo.com</span></div>
+		</div>
+	</body>
+</html>

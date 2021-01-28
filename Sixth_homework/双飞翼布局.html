@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>双飞翼布局</title>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			.left{width: 200px; height: 500px; background-color: #F00; float: left;}
+			.main{height: 500px; background-color: #FF0; overflow: hidden;}
+			.right{width: 200px; height: 500px; background-color: #999; float: right;}
+			/* overflow:hidden可以出发bfc,bfc:块级格式上下文,
+				选软规则
+			*/
+		</style>
+	</head>
+	<body>
+		我在前面的外面
+		<div>
+			<div class="left">
+				左
+			</div>
+			<div class="right">
+				中
+			</div>
+			<div class="main">
+				右
+			</div>
+		</div>
+		我在后面的外面
+	</body>
+</html>
