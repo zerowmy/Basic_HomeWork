@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表格</title>
+		<style type="text/css">
+			*{margin: 0px; padding: 0px;}
+			h3{text-align: center; padding: 6px;}
+			table{margin: 0 auto; border: 2px #4D94FE solid;}
+			.week{background-color: pink;}
+			tr,td{text-align: center;border: 1px solid #4D94FE;}
+		</style>
+	</head>
+	<body>
+		<h3>成绩表</h3>
+		<table border="1" cellspacing="2" cellpadding="2">
+			<tr>
+				<td>项目</td>
+				<td colspan="5">上课</td>
+				<td colspan="2">休息</td>
+			</tr>
+			<tr class="week">
+				<td>星期</td>
+				<td>星期一</td>
+				<td>星期二</td>
+				<td>星期三</td>
+				<td>星期四</td>
+				<td>星期五</td>
+				<td>星期六</td>
+				<td>星期日</td>
+			</tr>
+			<tr>
+				<td rowspan="4">上午</td>
+				<td>语文</td>
+				<td>数学</td>
+				<td>英语</td>
+				<td>英语</td>
+				<td>物理</td>
+				<td>计算机</td>
+				<td rowspan="4">休息</td>
+			</tr>
+			<tr>
+				<td>数学</td>
+				<td>数学</td>
+				<td>地理</td>
+				<td>化学</td>
+				<td>历史</td>
+				<td>计算机</td>
+			</tr>
+			<tr>
+				<td>语文</td>
+				<td>数学</td>
+				<td>历史</td>
+				<td>计算机</td>
+				<td>物理</td>
+				<td>化学</td>
+			</tr>
+			<tr>
+				<td>数学</td>
+				<td>数学</td>
+				<td>地理</td>
+				<td>化学</td>
+				<td>历史</td>
+				<td>计算机</td>
+			</tr>
+			<tr>
+				<td rowspan="2">下午</td>
+				<td>数学</td>
+				<td>数学</td>
+				<td>地理</td>
+				<td>化学</td>
+				<td>历史</td>
+				<td>计算机</td>
+				<td rowspan="2">休息</td>
+			</tr>
+			<tr>
+				<td>数学</td>
+				<td>数学</td>
+				<td>地理</td>
+				<td>化学</td>
+				<td>历史</td>
+				<td>计算机</td>
+			</tr>
+		</table>
+	</body>
+</html>
