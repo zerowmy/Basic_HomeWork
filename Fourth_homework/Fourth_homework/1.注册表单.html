@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册表单</title>
+		<style type="text/css">
+			* { margin: 0; padding: 0; }
+			form {
+				display: block; width: 950px; height: 380px; margin: auto; border: 1px black dashed;
+				padding: 2px; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+			}
+			.left{float: left;}
+			.right{float: left;}
+			.lab{ 
+				display: inline-block; text-align: center; margin: 4px 2px; padding: 4px 16px; 
+				letter-spacing: 0.2em;
+			}
+			.lab_l {
+				display: inline-block; outline:none; width: 150px; text-align: right; margin: 4px 2px; 
+				padding: 4px; letter-spacing: 0.2em;
+			}
+			.lab_r{ display: inline-block; width: 250px; text-align: left; margin: 4px 0px; padding: 4px 0px; }
+			.ipt { 
+				display: inline-block; width: 200px; text-align: left; margin: 4px 2px; padding: 6px; 
+				outline: #CDCDCD; }
+			.shortbox { display: inline; width: 20px; padding: 4px; }
+			img , .text{display: inline-block;vertical-align: middle;}
+			.sub{display: inline-block; text-align: center;}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<!-- (label{姓名$}+input)*4 -->
+			<div class="left">
+				<div>
+					<label class="lab_l">登录名：</label>
+					<input type="text" class="ipt" placeholder="请输入&emsp;登陆名" maxlength="8">
+					<label class="lab_r">（可以包含&nbsp;a-z、0-9和下划线）</label>
+				</div>
+				<div>
+					<label class="lab_l">密码：</label>
+					<input type="text" class="ipt"placeholder="请输入&emsp;密码" maxlength="12">
+					<label class="lab_r">（至少包含6个字符）</label>
+				</div>
+				<div>
+					<label class="lab_l">再次输入密码：</label>
+					<input type="text" class="ipt"placeholder="再次输入&emsp;密码" maxlength="12">
+				</div>
+				<div>
+					<label class="lab_l">电子邮箱：</label>
+					<input type="text" class="ipt"placeholder="请输入&emsp;电子邮箱" maxlength="16">
+					<label class="lab_r">（必须包含@字符）</label>
+				</div>
+				<div>
+					<label class="lab_l">性别：</label>
+					<input name="sex" type="radio" class="shortbox" checked><img src="img/Male.gif" alt="性别">男&nbsp;&nbsp;
+					<input name="sex" type="radio" class="shortbox"><img src="img/Female.gif" alt="性别">女
+				</div>
+				<div>
+					<label class="lab_l">图像：</label>
+					<input type="text" class="ipt">
+					<input type="button" class="lab" value="浏览..." />
+				</div>
+				<div>
+					<label class="lab_l">爱好：</label>
+					<input name="sport" type="checkbox" class="shortbox">运动
+					<input name="chat" type="checkbox" class="shortbox">聊天
+					<input name="playgame" type="checkbox" class="shortbox">玩游戏
+				</div>
+				<div>
+					<label class="lab_l">喜欢的城市：</label>
+					<select name="city">
+						<option value="0">[&nbsp;请选择&nbsp;]</option>
+						<option value="beijing">北京</option>
+						<option value="shanghai">上海</option>
+					</select>
+				</div>
+				<div>
+					<label class="lab_l"></label>
+					<div class="sub">
+						<input type="submit" class="lab" value="同意条款,提交注册信息" />
+						<input type="reset" class="lab" value="重&emsp;填" />
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div>
+					<img src="img/note.PNG" ><span class="text">阅读网服协议</span>
+				</div>
+				<div>
+					<textarea rows="20" cols="35">
+						欢迎阅读服务条款协议………
+					</textarea>
+				</div>
+			</div>
+		</form>
+	</body>
+	<html>

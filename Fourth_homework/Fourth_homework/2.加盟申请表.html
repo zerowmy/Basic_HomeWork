@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>加盟申请表</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.main{border: 1px black dashed;margin:8px auto;width: 750px;padding: 8px;}
+			.titR , img{vertical-align: middle; display: inline-block;}
+			.titToplft{ color: #2289C7; font-weight: 300 ;}
+			.titToprht{ color: #9E9E9E;}
+			img , .titTop , .titToprht{vertical-align: middle; display: inline-block;}
+			.titRbm{color: #3F3FFF;}
+			.shortbox {
+				display: inline;
+				width: 20px;
+				padding: 4px;
+			}
+
+			.form {
+				width: 730px;
+				display: block;
+				outline: none;
+				margin: 0 auto;
+			}
+
+			.form div label {
+				display: inline-block;
+				width: 220px;
+				margin: 0px 2px;
+				padding: 4px;
+				vertical-align: middle;
+			}
+
+			.form div input {
+				outline: none;
+				margin: 0px 2px;
+				padding: 4px;
+			}
+
+			.selet {
+				display: inline-block;
+				outline: none;
+				margin: 0px 2px;
+				padding: 4px;
+				letter-spacing: 0.2em;
+			}
+			.sub{display: block; letter-spacing: 0.8em;padding: 2px 4px;margin: 2px auto;}
+			span {
+				display: inline-block;
+				color: red;
+				padding: 0px 4px;
+				vertical-align: middle;
+			}
+			.kow{display: inline; margin-left: 220px;}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="">
+				<h3 class="titToplft">在线申请 <span class="titToprht">Apply&nbsp;&nbsp;Online</span><img src="img/jiantou.png" ></h3>
+				<div class="title">
+					<img src="img/title.png" >
+					<div class="titR">
+						<h2><b>加盟申请表</b></h2>
+						<span class="titRbm">注:打*为必填项</span>
+					</div>
+					<h3><b>代理申请基本信息</b></h3>
+				</div>
+			</div>
+			<div>
+				<form action="#" method="post">
+					<div class="form">
+						<div>
+							<label>申请人姓名<span>*</span></label>
+							<input type="text">
+						</div>
+						<div>
+							<label>籍贯<span>*</span></label>
+							<select name="jiguan" class="selet"">
+								<option value=" 0">请选择</option>
+								<option value="1">湖北</option>
+							</select>省
+							<select name="quyu" class="selet">
+								<option value="0">请选择</option>
+								<option value="1-1">孝感</option>
+							</select>区
+						</div>
+						<div>
+							<label>性别<span>*</span></label>
+							<input name="sex" type="radio" value="man" class="shortbox">男
+							<input name="sex" type="radio" value="wuman" class="shortbox">女
+						</div>
+						<div>
+							<label div>身份证号<span>*</span></label>
+							<input type="text">
+						</div>
+						<div>
+							<label>联系地址<span>*</span></label>
+							<input type="text">
+						</div>
+						<div>
+							<label>电话<span>*</span></label>
+							<input type="text">
+						</div>
+						<div>
+							<label>电子邮箱<span>*</span></label>
+							<input type="text">
+						</div>
+						<div>
+							<label>加盟地区<span>*</span></label>
+							<input type="text">
+						</div>
+						<div>
+							<label>你是从哪里了解到我们的？</label>
+							<input type="checkbox" name="baidu" />Baidu
+							<input type="checkbox" name="Google" />Google
+							<input type="checkbox" name="tv" />电视广告
+							<input type="checkbox" name="zazhi" />报刊杂志
+							<input type="checkbox" name="lupai" />路牌广告
+							<input type="checkbox" name="friendintro" />朋友介绍
+						</div>
+						<div>
+							<label></label>
+							<input type="checkbox" name="show" class="kow"/><span>点击查看"Android"项目网上加盟免费申明</span> <a href="#">[点击查看]</a>
+						</div>
+						<input type="submit" value="提交" class="sub" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<html>
